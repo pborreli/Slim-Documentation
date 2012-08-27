@@ -1,4 +1,10 @@
 ---
 layout: default
 ---
-Coming soon!
+{% capture backtotop %}[Back to Top](#top){.top}{% endcapture %}
+{% for post in site.posts reversed %}
+    <div id="{{ post.title | downcase | replace:' ','_' | replace:'(','' | replace:')','' | replace:'.','' | replace:'-','' }}">
+    {{ post.content }}
+    </div>
+    {{ backtotop|markdownify }}
+{% endfor %}
