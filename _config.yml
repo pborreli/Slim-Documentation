@@ -3,3 +3,166 @@ server: true
 pygments: true
 markdown: maruku
 permalink: pretty
+toc:
+    - title: Getting Started
+      children:
+        - title: Installation
+          url: getting-started-install
+        - title: System Requirements
+          url: getting-started-requirements
+        - title: Hello World
+          url: getting-started-hello-world
+    - title: Configuration
+      children:
+        - title: Overview
+          url: configure-overview
+        - title: Application Settings
+          url: configure-settings
+        - title: Application Names and Scopes
+          url: configure-names-and-scopes
+        - title: Application Modes
+          url: configure-modes
+    - title: Routing
+      children:
+        - title: Overview
+          url: routing-overview
+        - title: GET Routes
+          url: routing-get
+        - title: POST Routes
+          url: routing-post
+        - title: PUT Routes
+          url: routing-put
+        - title: DELETE Routes
+          url: routing-delete
+        - title: OPTIONS Routes
+          url: routing-options
+        - title: Custom HTTP Methods
+          url: routing-custom-http-methods
+        - title: Route Parameters
+          url: routing-parameters
+        - title: Route Names
+          url: routing-names
+        - title: Route Conditions
+          url: routing-conditions
+        - title: Route Middleware
+          url: routing-middleware
+        - title: Helper Methods
+          url: routing-helper-methods
+        - title: URL Rewriting
+          url: routing-url-rewriting
+        - title: Trailing Slashes
+          url: routing-slashes
+    - title: Environment
+      children:
+        - title: Overview
+          url: environment-overview
+    - title: Request Object
+      children:
+        - title: Overview
+          url: request-overview
+        - title: Method
+          url: request-method
+        - title: Header
+          url: request-header
+        - title: Body
+          url: request-body
+        - title: Variables
+          url: request-variables
+        - title: Cookies
+          url: request-cookies
+        - title: Paths
+          url: request-paths
+        - title: XMLHttpRequest
+          url: request-xhr
+        - title: Helper Methods
+          url: request-helper-methods
+    - title: Response Object
+      children:
+        - title: Overview
+          url: response-overview
+        - title: Status
+          url: response-status
+        - title: Header
+          url: response-header
+        - title: Body
+          url: response-body
+        - title: Cookies
+          url: response-cookies
+        - title: Helper Methods
+          url: response-helper-methods
+    - title: View
+      children:
+        - title: Overview
+          url: view-overview
+        - title: Rendering Templates
+          url: view-rendering-templates
+        - title: Custom Views
+          url: view-custom
+        - title: Setting Data
+          url: view-data
+    - title: HTTP Caching
+      children:
+        - title: Overview
+          url: caching-overview
+        - title: ETag
+          url: caching-etag
+        - title: Last-Modified
+          url: caching-last-modified
+        - title: Expires
+          url: caching-expires
+    - title: Middleware
+      children:
+        - title: Overview
+          url: middleware-overview
+        - title: How to Use Middleware
+          url: middleware-how-to-use
+        - title: How to Write Middleware
+          url: middleware-how-to-write
+    - title: Hooks
+      children:
+        - title: Overview
+          url: hooks-overview
+        - title: Using Hooks
+          url: hooks-using
+        - title: Default Hooks
+          url: hooks-default
+        - title: Custom Hooks
+          url: hooks-custom
+    - title: Flash Messaging
+      children:
+        - title: Overview
+          url: flash-overview
+        - title: Flash Next
+          url: flash-next
+        - title: Flash Now
+          url: flash-now
+        - title: Flash Keep
+          url: flash-keep
+    - title: Sessions
+      children:
+        - title: Native Session Store
+          url: sessions-native
+        - title: Cookie Session Store
+          url: sessions-cookie
+    - title: Logging
+      children:
+        - title: Overview
+          url: logging-overview
+        - title: Enable/Disable Logging
+          url: logging-activate
+        - title: Log Levels
+          url: logging-levels
+        - title: Log Writers
+          url: logging-writers
+    - title: Error Handling
+      children:
+        - title: Overview
+          url: error-handling-overview
+        - title: Error Handler
+          url: error-handling-500
+        - title: Not Found Handler
+          url: error-handling-404
+        - title: Debugging
+          url: error-handling-debug
+        - title: Output Redirection
+          url: error-handling-output

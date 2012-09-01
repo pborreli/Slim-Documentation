@@ -2,11 +2,41 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>Slim Framework Documentation</title>
-        <meta name="description" content=""/>
-        <link rel="stylesheet" href="/ui/styles/all.css"/>
+        <title>{% if page.title %}{{ page.title }} - {% endif %}Slim Framework Documentation</title>
+        <meta name="description" content="Complete documentation for the Slim Framework, a PHP micro framework by Josh Lockhart"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="/ui/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/ui/css/responsive.css"/>
+        <link rel="stylesheet" href="/ui/all.css"/>
     </head>
     <body>
-        {{content}}
+        <header class="site-header">
+            <div class="site-title"><a href="/">Slim</a></div>
+            <div class="site-slogan">Documentation</div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    {% if page.title %}
+                    <h1>{{ page.title }}</h1>
+                    {% endif %}
+
+                    {{ content }}
+
+                    {% if page.title %}
+                    <div class="go-back">
+                        <a class="btn btn-info" href="/">Return to Index</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <p>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Slim Framework Documentation</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.joshlockhart.com" property="cc:attributionName" rel="cc:attributionURL">Josh Lockhart</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://docs.slimframework.com" rel="dct:source">http://docs.slimframework.com</a>.
+            </p>
+        </footer>
     </body>
 </html>

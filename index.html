@@ -1,10 +1,13 @@
 ---
 layout: default
 ---
-{% capture backtotop %}[Back to Top](#top){.top}{% endcapture %}
-{% for post in site.posts reversed %}
-    <div id="{{ post.title | downcase | replace:' ','_' | replace:'(','' | replace:')','' | replace:'.','' | replace:'-','' }}">
-    {{ post.content }}
-    </div>
-    {{ backtotop|markdownify }}
-{% endfor %}
+<div class="well nav-container">
+    <ul class="nav nav-list">
+    {% for item in site.toc %}
+        <li class="nav-header">{{ item.title }}</li>
+        {% for child in item.children %}
+        <li><a href="pages/{{ child.url }}">{{ child.title }}</a></li>
+        {% endfor %}
+    {% endfor %}
+    </ul>
+</div>
