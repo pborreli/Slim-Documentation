@@ -50,8 +50,6 @@ toc:
           url: routing-helper-methods
         - title: URL Rewriting
           url: routing-url-rewriting
-        - title: Trailing Slashes
-          url: routing-slashes
     - title: Environment
       children:
         - title: Overview
